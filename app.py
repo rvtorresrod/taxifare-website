@@ -45,7 +45,6 @@ with st.form('input_form'):
     passenger_count = st.slider('How many passengers?', 1, 8)
     button = st.form_submit_button('Calculate')
 
-
 map = folium.Map(location=[float(st.secrets['default_trip']['START_LAT']), float(st.secrets['default_trip']['START_LON'])],
             tiles="OpenStreetMap",
             width="%100",
