@@ -3,18 +3,12 @@ import datetime
 import requests
 import folium
 from streamlit_folium import folium_static
-import numpy as np
-
-if 'lat' not in st.session_state:
-    st.session_state.lat = None
-
-if 'lon' not in st.session_state:
-    st.session_state.lat = None
 
 '''
 # TaxiFare NYC Model
 #### Welcome
 '''
+
 with st.form('input_form'):
     col1, col2 = st.columns(2)
     with col1:
